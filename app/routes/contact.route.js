@@ -10,9 +10,9 @@ router.route("/")
 
 router.route("/favorite")
     .get(contacts.findAllFavorite)
-router.route("/:id")
+router.route("/")
     .get(contacts.findOne)
-    .post(contacts.update)
+    .put(contacts.update)
     .delete(contacts.delete);
 
 module.exports = router;
