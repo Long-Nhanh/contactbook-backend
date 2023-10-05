@@ -4,7 +4,7 @@ const contactsRouter = require("./app/routes/contact.route");
 const ApiError = require("./app/api_error");
 
 const app = express();
-
+const mongoose = require('mongoose')
 
 app.use(cors());
 app.use(express.json());
